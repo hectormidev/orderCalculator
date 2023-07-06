@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Orders Calculator</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2 class="card__title">Levels, Boxes & parcials</h2>
+            <form class="form" action="#">
+                <label for="piecesQuantity">Total pieces
+                    <input type="number" id="piecesQuantity" required placeholder="Enter number of total pieces">
+                </label>
+                <label for="perBoxQuantity">Per box
+                    <input type="number" id="perBoxQuantity" required placeholder="Enter number of pieces per box">
+                </label>
+                <!-- <label for="perLevelQuantity">Boxes per level
+                    <input type="number" id="perLevelQuantity" placeholder="Enter boxes number per level">
+                </label> -->
+            </form>
+            <button class="btn">calculate</button>
+            <div class="results">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>create by <a href="https://github.com/hectormidev" target="_blank">@hectormidev</p>
+    </footer>
+    <script src="code.js"></script>
+</body>
+</html>

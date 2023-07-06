@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+:root{
+    --Dark-Blue: #0D2F80;
+    --Light-Blue: #6392FF;
+    --Soft-Blue: #195EFF;
+    --Gray: #878B94;
+    --Black: #000;
+    --White: #fff;
+    --Orange: #f83a00;
+    --Hover-Orange: #f35d2f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header{
+    flex: 1;
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    flex: 5;
+}
+
+/* HEADER SECTION */
+
+
+/* MAIN SECTION */
+.card{
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card__title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.form label{
+    display: flex;
+    flex-direction: column;
+}
+
+.form label input, .btn{
+    border: none;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: .7rem 0;
+    width: 100%;
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    letter-spacing: .16rem;
+    font-weight: bold;
+    color: var(--White);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--Hover-Orange);
+}
+
+/* deleting arrows in input type number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* FOOTER SECTION */
+footer a{
+    text-decoration: none;
+    color: var(--Black);
+    font-weight: bold;
+}
